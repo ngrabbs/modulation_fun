@@ -1,7 +1,7 @@
 """Lesson 1 package exports."""
 
 from .models import LessonParams, LessonRun, SignalStage, PRESET_BITSTRINGS
-from .stages import matched_filter
+from .stages import bits_to_symbols, symbols_to_waveform
 from .validation import validate_bitstring
 
 __all__ = [
@@ -10,5 +10,6 @@ __all__ = [
     "SignalStage",
     "PRESET_BITSTRINGS",
     "validate_bitstring",
-    "matched_filter",
+    "bits_to_symbols",
+    "symbols_to_waveform",
 ]
