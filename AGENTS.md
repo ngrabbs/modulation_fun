@@ -83,6 +83,8 @@ How to Run (Local)
 
 When the repo is bootstrapped, the standard commands should be:
 	•	Install (editable):
+	•	python3 -m venv venv
+	•	source venv/bin/activate
 	•	python -m pip install -e .
 	•	Run tests:
 	•	pytest
