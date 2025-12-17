@@ -44,7 +44,7 @@ Keep DSP logic out of the UI. The UI should call the core engine API.
 ⸻
 
 Coding Standards
-	•	Language: Python 3.11+ (prefer 3.12 compatibility, but don’t require it)
+	•	Language: Python 3.10+ (prefer 3.12 compatibility, but don’t require it)
 	•	Prefer small, pure functions for DSP stages.
 	•	Use type hints on public APIs and dataclasses.
 	•	Use dataclasses for models (LessonParams, SignalStage, LessonRun).
@@ -83,6 +83,8 @@ How to Run (Local)
 
 When the repo is bootstrapped, the standard commands should be:
 	•	Install (editable):
+	•	python3 -m venv venv
+	•	source venv/bin/activate
 	•	python -m pip install -e .
 	•	Run tests:
 	•	pytest
